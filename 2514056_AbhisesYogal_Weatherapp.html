@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="tIcon" href="https://cdn-icons-png.flaticon.com/128/831/831268.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather</title>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/912014918/photo/blue-sky-with-cloud-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=g3mBVQkqzlgigJmSV9MdJnGIizB3NWjG7DuyNLp3FAM=" class="backPic">
+    <div class="weatherResult">
+        <div class="searchbar">
+            <input type="text" class="form-field" id="search" placeholder="Enter a city name">
+            <button id="btn">Search</button>
+        </div>
+        <div id="weatherDetail">
+            <p id="weatherIcon">Please wait...</p>
+            <p id="cityName">Please wait...</p>
+            <p id="dateAndTime">Please wait...</p>
+            <p id="weatherStatus">Please wait...</p>
+            <p id="weatherDescription">Please wait...</p>
+        </div>
+        <div class="temp">
+            <img src="https://cdn-icons-png.flaticon.com/128/481/481431.png" width="40px">
+            <p id="temperatureMax">Please wait...</p>
+            <p id="temperatureMin">Please wait...</p>
+        </div>    
+        <div class="specs">
+            <img src="https://cdn-icons-png.flaticon.com/128/9667/9667620.png" width="40px">
+            <p id="pressure">Please wait...</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/481/481453.png" width="40px">
+            <p id="humidity">Please wait...</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/6015/6015171.png" width="40px">
+            <p id="windSpeed">Please wait...</p>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

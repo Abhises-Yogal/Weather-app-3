@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+}
+.backPic{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .backPic{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .backPic{
+        width: 100%;
+        height: 100%;
+    }
+}
+.weatherResult{
+    width: 90%;
+    max-width: 480px;
+    margin: 40px auto 0;
+    background: transparent;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    border: 5px;
+    border-radius: 10px;
+}
+.searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-field{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.form-field:focus{
+    background-color: lavender;
+}
+button[id="btn"]{
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    border: none;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: lavender;
+    color: lightslategray;
+    font-weight: 500;
+    cursor: pointer;
+}
+button[id="btn"]:hover{
+    background-color: lightblue;
+}
+p[id="cityName"]{
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    padding-bottom: 5px;
+}
+p[id="dateAndTime"]{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+p[id="weatherStatus"]{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    padding-bottom: 5px;
+}
+p[id="weatherDescription"]{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    padding-bottom: 5px;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+p[id="temperatureMax"]{
+    padding-top: 5px;
+    font-size: 15px;
+    text-align: right;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    padding-bottom: 5px;
+}
+p[id="temperatureMin"]{
+    padding-top: 5px;
+    font-size: 15px;
+    text-align: right;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    padding-bottom: 5px;
+}
+.specs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+p[id="pressure"]{
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+}
+p[id="humidity"]{
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+}
+p[id="windSpeed"]{
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+}
